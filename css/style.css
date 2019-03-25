@@ -246,10 +246,6 @@ button:focus {
         padding: 10px 10px;
       }
 
-      .d-flex img {
-        border: 2px solid green;
-      }
-
 .top_menu {
   background: #f9f9ff; }
   .top_menu .header_social li {
