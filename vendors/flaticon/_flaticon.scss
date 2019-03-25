@@ -1,12 +1,13 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 26/06/2018 17:19
+    Creation date: 11/03/2019 08:11
     */
 
     @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
        url("./Flaticon.woff") format("woff"),
        url("./Flaticon.ttf") format("truetype"),
        url("./Flaticon.svg#Flaticon") format("svg");
@@ -36,10 +37,104 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-skyline:before { content: "\f100"; }
-.flaticon-sketch:before { content: "\f101"; }
-.flaticon-city:before { content: "\f102"; }
+    .flaticon-001-desk:before { content: "\f100"; }
+.flaticon-002-scanner:before { content: "\f101"; }
+.flaticon-003-spray-can:before { content: "\f102"; }
+.flaticon-004-printer:before { content: "\f103"; }
+.flaticon-005-memory:before { content: "\f104"; }
+.flaticon-006-compass:before { content: "\f105"; }
+.flaticon-007-picture:before { content: "\f106"; }
+.flaticon-008-graphic-tablet:before { content: "\f107"; }
+.flaticon-009-delete:before { content: "\f108"; }
+.flaticon-010-pendrive:before { content: "\f109"; }
+.flaticon-011-grid:before { content: "\f10a"; }
+.flaticon-012-edit-text:before { content: "\f10b"; }
+.flaticon-013-idea:before { content: "\f10c"; }
+.flaticon-014-picture-1:before { content: "\f10d"; }
+.flaticon-015-photo-film:before { content: "\f10e"; }
+.flaticon-016-paint:before { content: "\f10f"; }
+.flaticon-017-pantone:before { content: "\f110"; }
+.flaticon-018-target:before { content: "\f111"; }
+.flaticon-019-sketch:before { content: "\f112"; }
+.flaticon-020-canvas:before { content: "\f113"; }
+.flaticon-021-measurent:before { content: "\f114"; }
+.flaticon-022-rgb:before { content: "\f115"; }
+.flaticon-023-monitor:before { content: "\f116"; }
+.flaticon-024-pencil:before { content: "\f117"; }
+.flaticon-025-design:before { content: "\f118"; }
+.flaticon-026-smartphone:before { content: "\f119"; }
+.flaticon-027-photography:before { content: "\f11a"; }
+.flaticon-028-photo-camera:before { content: "\f11b"; }
+.flaticon-029-photography-1:before { content: "\f11c"; }
+.flaticon-030-artwork:before { content: "\f11d"; }
+.flaticon-031-ai:before { content: "\f11e"; }
+.flaticon-032-eps:before { content: "\f11f"; }
+.flaticon-033-psd:before { content: "\f120"; }
+.flaticon-034-image:before { content: "\f121"; }
+.flaticon-035-creativity:before { content: "\f122"; }
+.flaticon-036-laptop:before { content: "\f123"; }
+.flaticon-037-pencil-1:before { content: "\f124"; }
+.flaticon-038-responsive:before { content: "\f125"; }
+.flaticon-039-creative:before { content: "\f126"; }
+.flaticon-040-creative-1:before { content: "\f127"; }
+.flaticon-041-wireframe:before { content: "\f128"; }
+.flaticon-042-sketchbook:before { content: "\f129"; }
+.flaticon-043-monitor-1:before { content: "\f12a"; }
+.flaticon-044-layers:before { content: "\f12b"; }
+.flaticon-045-folder:before { content: "\f12c"; }
+.flaticon-046-pantone-1:before { content: "\f12d"; }
+.flaticon-047-svg:before { content: "\f12e"; }
+.flaticon-048-indd:before { content: "\f12f"; }
+.flaticon-049-portfolio:before { content: "\f130"; }
+.flaticon-050-wireframe-1:before { content: "\f131"; }
     
-    $font-Flaticon-skyline: "\f100";
-    $font-Flaticon-sketch: "\f101";
-    $font-Flaticon-city: "\f102";
+    $font-Flaticon-001-desk: "\f100";
+    $font-Flaticon-002-scanner: "\f101";
+    $font-Flaticon-003-spray-can: "\f102";
+    $font-Flaticon-004-printer: "\f103";
+    $font-Flaticon-005-memory: "\f104";
+    $font-Flaticon-006-compass: "\f105";
+    $font-Flaticon-007-picture: "\f106";
+    $font-Flaticon-008-graphic-tablet: "\f107";
+    $font-Flaticon-009-delete: "\f108";
+    $font-Flaticon-010-pendrive: "\f109";
+    $font-Flaticon-011-grid: "\f10a";
+    $font-Flaticon-012-edit-text: "\f10b";
+    $font-Flaticon-013-idea: "\f10c";
+    $font-Flaticon-014-picture-1: "\f10d";
+    $font-Flaticon-015-photo-film: "\f10e";
+    $font-Flaticon-016-paint: "\f10f";
+    $font-Flaticon-017-pantone: "\f110";
+    $font-Flaticon-018-target: "\f111";
+    $font-Flaticon-019-sketch: "\f112";
+    $font-Flaticon-020-canvas: "\f113";
+    $font-Flaticon-021-measurent: "\f114";
+    $font-Flaticon-022-rgb: "\f115";
+    $font-Flaticon-023-monitor: "\f116";
+    $font-Flaticon-024-pencil: "\f117";
+    $font-Flaticon-025-design: "\f118";
+    $font-Flaticon-026-smartphone: "\f119";
+    $font-Flaticon-027-photography: "\f11a";
+    $font-Flaticon-028-photo-camera: "\f11b";
+    $font-Flaticon-029-photography-1: "\f11c";
+    $font-Flaticon-030-artwork: "\f11d";
+    $font-Flaticon-031-ai: "\f11e";
+    $font-Flaticon-032-eps: "\f11f";
+    $font-Flaticon-033-psd: "\f120";
+    $font-Flaticon-034-image: "\f121";
+    $font-Flaticon-035-creativity: "\f122";
+    $font-Flaticon-036-laptop: "\f123";
+    $font-Flaticon-037-pencil-1: "\f124";
+    $font-Flaticon-038-responsive: "\f125";
+    $font-Flaticon-039-creative: "\f126";
+    $font-Flaticon-040-creative-1: "\f127";
+    $font-Flaticon-041-wireframe: "\f128";
+    $font-Flaticon-042-sketchbook: "\f129";
+    $font-Flaticon-043-monitor-1: "\f12a";
+    $font-Flaticon-044-layers: "\f12b";
+    $font-Flaticon-045-folder: "\f12c";
+    $font-Flaticon-046-pantone-1: "\f12d";
+    $font-Flaticon-047-svg: "\f12e";
+    $font-Flaticon-048-indd: "\f12f";
+    $font-Flaticon-049-portfolio: "\f130";
+    $font-Flaticon-050-wireframe-1: "\f131";
