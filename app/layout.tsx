@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Web Developer Portfolio",
+  title: "Mohammad Abedy —  Portfolio",
   description:
-    "A modern web developer portfolio showcasing immersive product experiences, performance-focused engineering, and collaborative process.",
+    "Mohammad Abedy is a web developer, QA tester and Scrum Master.",
   openGraph: {
-    title: "Your Name — Web Developer Portfolio",
+    title: "Mohammad Abedy —  Portfolio",
     description:
       "Explore selected projects, experience, and ways to collaborate on your next web experience.",
     url: "https://your-domain.com",
-    siteName: "Your Name Portfolio",
+    siteName: "Mohammad Abedy Portfolio",
     images: [
       {
         url: "/og-image.png",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://hmoa12.github.io/"),
 };
 
 export default function RootLayout({
