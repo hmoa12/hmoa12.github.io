@@ -15,7 +15,7 @@ import { ContactSection } from "@/components/contact-section";
 
 const navItems = [
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
+  // { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
