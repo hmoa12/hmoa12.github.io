@@ -231,7 +231,7 @@ export default function Home() {
 
         <main className="flex flex-col gap-24">
           <AboutSection skills={skills} />
-          <ProjectsSection projects={projects} />
+          {/* <ProjectsSection projects={projects} /> */}
           <ExperienceSection experiences={experiences} />
         </main>
 
