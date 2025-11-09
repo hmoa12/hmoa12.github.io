@@ -12,6 +12,7 @@ import { AboutSection } from "@/components/about-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { ContactSection } from "@/components/contact-section";
+import { ScrollLink } from "@/components/scroll-link";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -144,20 +145,20 @@ export default function Home() {
               — a product-focused engineer building modern, accessible interfaces with Next.js and a deep appreciation for thoughtful visual design.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link
+              <ScrollLink
                 href="#projects"
                 className="group flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-slate-950 transition hover:bg-cyan-300"
               >
                 View Projects
                 <ArrowUpRight className="size-4 transition group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 href="#contact"
                 className="flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-slate-200 transition hover:border-cyan-400/60 hover:text-white"
               >
                 Let's Collaborate
                 <Send className="size-4" />
-              </Link>
+              </ScrollLink>
             </div>
           </div>
           <div className="flex w-full flex-col gap-6 rounded-3xl border border-white/10 bg-slate-900/60 p-6 shadow-2xl shadow-cyan-500/10 sm:w-80">
@@ -218,12 +219,12 @@ export default function Home() {
           <ul className="flex flex-wrap items-center gap-1">
             {navItems.map((item) => (
               <li key={item.label}>
-                <Link
+                <ScrollLink
                   href={item.href}
                   className="block rounded-full px-4 py-2 text-slate-300 transition hover:bg-white/10 hover:text-white"
                 >
                   {item.label}
-                </Link>
+                </ScrollLink>
               </li>
             ))}
           </ul>

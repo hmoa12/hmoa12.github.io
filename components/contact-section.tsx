@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import { ScrollLink } from "@/components/scroll-link";
 
 type ContactSectionProps = {
   email: string;
@@ -62,13 +63,13 @@ export function ContactSection({
           Start a conversation
           <ArrowUpRight className="size-4 transition group-hover:translate-x-1 group-hover:-translate-y-1" />
         </Link>
-        <Link
+        <ScrollLink
           href="#projects"
           className="flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-slate-200 transition hover:border-cyan-400/60 hover:text-white"
         >
           Explore more work
           <ArrowUpRight className="size-4" />
-        </Link>
+        </ScrollLink>
       </div>
     </section>
   );
