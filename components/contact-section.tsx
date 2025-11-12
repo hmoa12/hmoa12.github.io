@@ -20,7 +20,7 @@ export function ContactSection({
       id="contact"
       className={`flex flex-col gap-8 rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-900/20 px-8 py-12 shadow-2xl shadow-cyan-500/10 ${className}`}
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 wrap-content">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
           Let&apos;s build something remarkable.
         </h2>
