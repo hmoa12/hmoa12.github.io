@@ -18,7 +18,7 @@ export function ContactSection({
   return (
     <section
       id="contact"
-      className={`flex flex-col gap-8 rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-900/20 px-8 py-12 shadow-2xl shadow-cyan-500/10 ${className}`}
+      className={`flex flex-col gap-8 rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-900/20 px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 shadow-2xl shadow-cyan-500/10 ${className}`}
     >
       <div className="flex flex-col gap-4 wrap-content">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -29,30 +29,30 @@ export function ContactSection({
           within a day and love collaborations that push the web forward.
         </p>
       </div>
-      <div className="grid gap-6 lg:grid-cols-3">
-        <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+      <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-6 min-w-0">
           <span className="text-sm uppercase tracking-[0.3em] text-slate-400">
             Email
           </span>
           <Link
             href={`mailto:${email}`}
-            className="flex items-center gap-2 text-lg text-white transition hover:text-cyan-200"
+            className="flex items-center gap-2 text-base sm:text-lg text-white transition hover:text-cyan-200 break-all"
           >
             {email}
-            <ArrowUpRight className="size-4" />
+            <ArrowUpRight className="size-4 flex-shrink-0" />
           </Link>
         </div>
-        <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-6 min-w-0">
           <span className="text-sm uppercase tracking-[0.3em] text-slate-400">
             Preferred Collaboration
           </span>
-          <p className="text-base text-slate-300">{preferredCollaboration}</p>
+          <p className="text-base text-slate-300 break-words">{preferredCollaboration}</p>
         </div>
-        <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-6 min-w-0">
           <span className="text-sm uppercase tracking-[0.3em] text-slate-400">
             Response Time
           </span>
-          <p className="text-base text-slate-300">{responseTime}</p>
+          <p className="text-base text-slate-300 break-words">{responseTime}</p>
         </div>
       </div>
       <div className="flex flex-wrap gap-4">
@@ -74,4 +74,3 @@ export function ContactSection({
     </section>
   );
 }
-
