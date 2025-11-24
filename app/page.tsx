@@ -9,14 +9,14 @@ import {
 } from "lucide-react";
 import { TypewriterName } from "@/components/typewriter-name";
 import { AboutSection } from "@/components/about-section";
-// import { ProjectsSection } from "@/components/projects-section";
+import { ProjectsSection } from "@/components/projects-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { ContactSection } from "@/components/contact-section";
 import { ScrollLink } from "@/components/scroll-link";
 
 const navItems = [
   { label: "About", href: "#about" },
-  // { label: "Projects", href: "#projects" },
+  { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
@@ -225,7 +225,7 @@ export default function Home() {
 
         <main className="flex flex-col gap-24">
           <AboutSection skills={skills} />
-          {/* <ProjectsSection projects={projects} /> */}
+          <ProjectsSection projects={projects} />
           <ExperienceSection experiences={experiences} />
         </main>
 
