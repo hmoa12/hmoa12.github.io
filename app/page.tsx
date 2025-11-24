@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { TypewriterName } from "@/components/typewriter-name";
 import { AboutSection } from "@/components/about-section";
-import { ProjectsSection } from "@/components/projects-section";
+// import { ProjectsSection } from "@/components/projects-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { ContactSection } from "@/components/contact-section";
 import { ScrollLink } from "@/components/scroll-link";
@@ -23,28 +23,20 @@ const navItems = [
 
 const projects = [
   {
-    title: "Nebula CMS",
+    title: "Dev CLI Tools",
     description:
-      "A content platform that adapts to any device and channel, built with real-time previews and a custom component library.",
-    stack: ["Next.js", "TypeScript", "GraphQL", "Tailwind"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "A CLI tools for developers to help them with their daily tasks.",
+    stack: ["TypeScript", "Node.js"],
+    liveUrl: "https://github.com/hmoa12/dev-cli-tools",
+    repoUrl: "https://github.com/hmoa12/dev-cli-tools",
   },
   {
-    title: "Pulse Analytics",
+    title: "Task Management System API",
     description:
-      "A data visualization toolkit that turns product analytics into interactive dashboards for fast-moving teams.",
-    stack: ["React", "D3.js", "tRPC", "PostgreSQL"],
-    liveUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    title: "Launch Studio",
-    description:
-      "An automation suite that prototypes landing pages, gathers conversion insights, and syncs feedback into Notion.",
-    stack: ["Next.js", "Edge Functions", "Tailwind", "Resend"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "A RESTful API for task management built with Express.js, TypeScript, and PostgreSQL. Features role-based access control with user authentication and authorization.",
+    stack: ["TypeScript", "Node.js", "Express.js", "PostgreSQL"],
+    liveUrl: "https://github.com/hmoa12/task-tracker-api",
+    repoUrl: "https://github.com/hmoa12/task-tracker-api",
   },
 ];
 
@@ -165,8 +157,9 @@ export default function Home() {
             <div className="flex items-center justify-between text-sm font-medium text-slate-300">
               <span>Availability</span>
               <span className="flex items-center gap-2 text-emerald-300">
-                Open for new projects
-                <span className="size-2 rounded-full bg-emerald-300" />
+                <span className="availability-full">Open for new projects</span>
+                <span className="availability-short">Available</span>
+                <span className="size-2 flex-shrink-0 rounded-full bg-emerald-300" />
               </span>
             </div>
             <p className="text-sm text-slate-400">
