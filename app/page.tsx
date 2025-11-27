@@ -29,6 +29,7 @@ const projects = [
     stack: ["TypeScript", "Node.js"],
     liveUrl: "https://github.com/hmoa12/dev-cli-tools",
     repoUrl: "https://github.com/hmoa12/dev-cli-tools",
+    isLaunched: false,
   },
   {
     title: "Task Management System API",
@@ -37,6 +38,7 @@ const projects = [
     stack: ["TypeScript", "Node.js", "Express.js", "PostgreSQL"],
     liveUrl: "https://github.com/hmoa12/task-tracker-api",
     repoUrl: "https://github.com/hmoa12/task-tracker-api",
+    isLaunched: false,
   },
   {
     title: "Wordle",
@@ -45,6 +47,7 @@ const projects = [
     stack: ["React", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://wordle-delta-wheat.vercel.app",
     repoUrl: "https://github.com/hmoa12/wordle",
+    isLaunched: true,
   }
 ];
 
@@ -104,7 +107,6 @@ const skills = [
   "Node.js",
   "Next.js",
   "Tailwind CSS",
-  "Node.js",
   "PostgreSQL",
   "MySQL",
   "MongoDB",

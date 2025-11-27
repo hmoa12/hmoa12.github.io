@@ -7,6 +7,7 @@ type Project = {
   stack: string[];
   liveUrl: string;
   repoUrl: string;
+  isLaunched?: boolean;
 };
 
 type ProjectsSectionProps = {
@@ -42,12 +43,14 @@ export function ProjectsSection({
               <h3 className="text-2xl font-semibold text-white">
                 {project.title}
               </h3>
-              <Link
-                href={project.liveUrl}
-                className="rounded-full border border-white/10 p-2 text-slate-300 transition hover:border-cyan-400/60 hover:text-white"
-              >
-                <ArrowUpRight className="size-4" />
-              </Link>
+              {project.isLaunched && (
+                <Link
+                  href={project.liveUrl}
+                  className="rounded-full border border-white/10 p-2 text-slate-300 transition hover:border-cyan-400/60 hover:text-white"
+                >
+                  <ArrowUpRight className="size-4" />
+                </Link>
+              )}
             </div>
             <p className="text-base text-slate-300">{project.description}</p>
             <div className="flex flex-wrap gap-2 text-sm text-slate-400">
@@ -68,13 +71,15 @@ export function ProjectsSection({
                 <Github className="size-3.5" />
                 View code
               </Link>
-              <Link
-                href={project.liveUrl}
-                className="flex items-center gap-2 rounded-full border border-transparent px-3 py-1.5 text-cyan-300 transition hover:text-cyan-200"
-              >
-                Launch project
-                <ArrowUpRight className="size-3.5" />
-              </Link>
+              {project.isLaunched && (
+                <Link
+                  href={project.liveUrl}
+                  className="flex items-center gap-2 rounded-full border border-transparent px-3 py-1.5 text-cyan-300 transition hover:text-cyan-200"
+                >
+                  Launch project
+                  <ArrowUpRight className="size-3.5" />
+                </Link>
+              )}
             </div>
           </article>
         ))}
