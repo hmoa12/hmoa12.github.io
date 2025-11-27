@@ -38,6 +38,14 @@ const projects = [
     liveUrl: "https://github.com/hmoa12/task-tracker-api",
     repoUrl: "https://github.com/hmoa12/task-tracker-api",
   },
+  {
+    title: "Wordle",
+    description:
+      "A wordle game built with React, TypeScript, and Tailwind CSS. It has feature that no other wordle game has, IT PROVIDES HINTS!",
+    stack: ["React", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://wordle-delta-wheat.vercel.app",
+    repoUrl: "https://github.com/hmoa12/wordle",
+  }
 ];
 
 const experiences = [
