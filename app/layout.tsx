@@ -13,27 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mohammad Abedy —  Portfolio",
-  description:
-    "Mohammad Abedy is a web developer, QA tester and Scrum Master.",
-  openGraph: {
-    title: "Mohammad Abedy —  Portfolio",
-    description:
-      "Explore selected projects, experience, and ways to collaborate on your next web experience.",
-    url: "https://your-domain.com",
-    siteName: "Mohammad Abedy Portfolio",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Preview of your modern web developer portfolio",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  metadataBase: new URL("https://hmoa12.github.io/"),
+  title: "Under Maintenance",
+  description: "This page is currently under maintenance.",
 };
 
 export default function RootLayout({
